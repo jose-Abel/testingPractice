@@ -1,19 +1,27 @@
 class Calculator {
 
-    add() {
-
+    add(...args) {
+        return args.reduce((acc, cur)=> {
+            return acc + cur;
+        });
     }
 
-    subtract() {
-
+    subtract(...args) {
+        return args.reduce((acc, cur)=> {
+            return acc - cur;
+        });
     }
 
-    divide() {
-
+    divide(...args) {
+        return args.reduce((acc, cur)=> {
+            return acc / cur;
+        });
     }
 
-    multiply() {
-
+    multiply(...args) {
+        return args.reduce((acc, cur)=> {
+            return acc * cur;
+        });
     }
 }
 
